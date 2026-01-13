@@ -1,18 +1,23 @@
 Photography Service Landing Page
---------------------------------
+
+Name:Rossen Dale S. Dizon
+Section:BSIT-2A
+Subject:Websystem and Technologies
 
 Project Description
--------------------
-This project is a single-page website for a freelance photography service.
-It was created using HTML, CSS, and JavaScript as part of the
-Web Systems and Technologies subject.
 
-The website showcases photography services and allows users to
-view images, search content, and submit inquiries using a form.
+This project is a single-page website for a freelance photography service and a place to share works and ideas
+this was created using HTML, CSS, and JavaScript 
+
+my website showcases a photography services and also a Place to Share works and Ideas.
+this is like a pinterest that you can search pictures,themes but the unique thing about my Landing page is that it
+as a fill up form if you want to hire a photographer for a event or task them to capture a specific picture like
+Nat Geo hiring people to capture Wild Life for there TV Show, and also my website show case example of pictures that you 
+desire to have in your events.
 
 
 Features
---------
+
 - Hero section with service introduction
 - Image gallery
 - Zoom in / zoom out image effect
@@ -21,48 +26,33 @@ Features
 - Responsive layout for different screen sizes
 
 
-Technologies Used
------------------
-- HTML5
-- CSS3
+Applications Used 
+
+- HTML
+- CSS
 - JavaScript
 - Visual Studio Code
 
 
 Folder Structure
-----------------
+
 project-folder/
-│
-├── index.html        (Main HTML file)
-├── style.css         (Stylesheet)
-├── script.js         (JavaScript functions)
-├── images/           (Folder for photos)
-│   ├── sample1.jpg
-│   ├── sample2.jpg
-│   └── your-photos-here
-└── README.txt        (Project documentation)
+
+index.html        
+style.css         
+script.js         
+images/          
+images/hero.jpg
+images/img_7991.JPG
+images/img_6131.JPG
+images/austin_wedding.jpg
+README.txt   
+
+https://dizon-alt.github.io/Landing-Page-/?authuser=4
+GIT HUB link 
 
 
-How to Use
-----------
-1. Open the project folder in Visual Studio Code.
-2. Place your own photos inside the "images" folder.
-3. Update the image filenames in the HTML file if needed.
-4. Open index.html in a browser or use Live Server.
-5. The website should display correctly if all files are linked properly.
 
 
-Notes
------
-- Image files must be inside the project folder to work correctly.
-- External image links (e.g., Pinterest) are not recommended.
-- File names are case-sensitive.
 
 
-Author
-------
-Name: Rossen Dale Dizon
-Course: Web Systems and Technologies
-
-
-End of File
