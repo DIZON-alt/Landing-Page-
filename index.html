@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SnapHire | Photography Service</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+<header class="site-header">
+    <nav class="navbar">
+        <h1 class="logo">SnapHire</h1>
+
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#booking">Book</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+    </nav>
+</header>
+
+<main>
+
+<section class="hero" id="home">
+    <div class="hero-text">
+        <h2>Hire Professional Photographers</h2>
+        <p>Discover photographers, explore their work, and book them easily in one platform.</p>
+        <button class="primary-btn">Find a Photographer</button>
+        <button class="secondary-btn">Join as Photographer</button>
+    </div>
+
+    <div class="hero-image">
+      
+        <img src="images/hero.jpg" alt="photography">
+    </div>
+</section>
+
+
+<section class="features" id="features">
+    <h3>Why Choose SnapHire?</h3>
+
+    <div class="feature-grid">
+        <article class="feature-card">
+            <h4>Portfolio Showcase</h4>
+            <p>Photographers can upload and share their best works.</p>
+        </article>
+
+        <article class="feature-card">
+            <h4>Easy Booking</h4>
+            <p>Clients can book photographers with simple options.</p>
+        </article>
+
+        <article class="feature-card">
+            <h4>Search & Discover</h4>
+            <p>Find photographers based on style and category.</p>
+        </article>
+    </div>
+</section>
+
+
+<section class="portfolio" id="portfolio">
+    <h3>Photography Portfolio</h3>
+
+  
+    <input 
+        type="text" 
+        id="searchInput" 
+        placeholder="Search photos (wild life, portrait, event)"
+        class="search-bar"
+        onkeyup="searchPhotos()"
+    >
+
+    <div class="portfolio-grid">
+    
+        <img src="images/img_7991.JPG" alt="Wild Life photography" onclick="openModal(this)">
+        <img src="images/img_6131.JPG" alt="Portrait photography" onclick="openModal(this)">
+        <img src="images/austin_wedding.jpg" alt="Event photography" onclick="openModal(this)">
+    </div>
+</section>
+
+
+<div id="imageModal" class="modal" onclick="closeModal()">
+    <span class="close">&times;</span>
+    <img id="modalImage" class="modal-content" onclick="event.stopPropagation()">
+</div>
+
+
+<section class="booking" id="booking">
+    <h3>Book a Photographer</h3>
+
+    <form class="booking-form">
+        <label>Full Name</label>
+        <input type="text" placeholder="Your name" required>
+
+        <label>Email</label>
+        <input type="email" placeholder="Your email" required>
+
+        <label>Photography Type</label>
+        <select required>
+            <option value="">Select type</option>
+            <option>Wild Life</option>
+            <option>Portrait</option>
+            <option>Event</option>
+            <option>Product</option>
+        </select>
+
+        <label>Preferred Date</label>
+        <input type="date">
+
+        <label>Additional Notes</label>
+        <textarea placeholder="Describe your request"></textarea>
+
+        <button type="submit">Submit Request</button>
+    </form>
+</section>
+
+</main>
+
+
+<footer class="footer" id="contact">
+    <h4>Contact Us</h4>
+    <p>Email: support@snaphire.com</p>
+    <p>Phone: +63 900 123 4567</p>
+
+    <div class="social-links">
+        <a href="#">Facebook</a>
+        <a href="#">Instagram</a>
+        <a href="#">Twitter</a>
+    </div>
+
+    <p class="copyright">
+        © 2026 SnapHire. All rights reserved.
+    </p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
